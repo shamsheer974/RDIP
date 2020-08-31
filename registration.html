@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body{
+    margin: 50px;
+}
+.logo{
+  width:125px;
+  height:125px;
+}
+.right-div{
+    position: absolute;
+    top: 75px;
+    right: 50px;
+  font-size:40px;
+   
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111;
+}
+
+.reg{
+margin:20px;
+}
+
+</style>
+<title>Registration Page</title>
+</head>
+<body>
+<div class="main-page">
+  <div class="left-div"><a href="https://www.iiit.ac.in/"target="blank"><img src="https://www.iiit.ac.in/img/iiit-new.png" class="logo"></a></div>
+   <div class="right-div"><b><a href="https://serc.iiit.ac.in/rdip"target="blank">RDIP</a></b></div>
+</div>
+<br><br>
+<div class="nav">
+  <ul>
+  <li><a  href="homepage.html">Home</a></li>
+  <li><a class="active" href="registration.html">Registeration Form</a></li>
+</ul>
+</div>
+<div class="reg">
+<form action="details.html">
+  <label for="fname" style="margin-right:100px">First name:</label>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="email" style="margin-right:130px">Email:</label>
+  <input type="text" id="email" name="email" value=""><br><br>
+<label for="phone" style="margin-right:72px">Phone Number:</label>
+  <input type="text" id="phone" name="phone" value=""><br><br>
+<label for="gender" style="margin-right:120px">Gender:</label>
+<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+<label for="reason" style="margin-right:65px">Reson for RDIP:</label>
+<input type="radio" id="html" name="reason" value="">
+  <label for="html">HTML</label>
+  <input type="radio" id="css" name="reason" value="">
+  <label for="css">CSS</label>
+  <input type="radio" id="js" name="reason" value="">
+  <label for="js">Java Script</label><br><br>
+<label for="college" style="margin-right:120px">College:</label>
+<input type="text" id="college" name="college" value=""><br><br>
+<input type="checkbox" id="agree" name="agree" value="">
+  <label for="agree" style="margin-left: 30px;"> I declare above details given by me are true</label><br><br>
+  <input type="submit" value="Submit">
+<input type="reset" value="Reset" style="margin-left: 150px;">
+</form> 
+</div>
+</body>
+</html>
